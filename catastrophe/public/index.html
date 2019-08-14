@@ -11,16 +11,17 @@
 	 <h1>Hello Razleena, I love you</h1>
 	 <div id="root"></div>
    	  <img src='assets/icon.png' id="test-image"/>
+   	  <script src="./secrets.js"></script>
       <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
       <script>
   
   var firebaseConfig = {
-    apiKey: "AIzaSyBpHy0Hrvkz8lc3idabXKy_3W4-1wp11j4",
+    apiKey: window.apiKey,
     authDomain: "chatastrophe-30429.firebaseapp.com",
     databaseURL: "https://chatastrophe-30429.firebaseio.com",
     projectId: "chatastrophe-30429",
     storageBucket: "",
-    messagingSenderId: "614099148256",
+    messagingSenderId: window.messagingSenderId,
     appId: "1:614099148256:web:bc1a3ebd16c1ca73"
   };
   window.firebase = firebase;
